@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
-          <div className="text-xs absolute top-0">THIS PAGE IS BEING BUILDING NOW ✅✅✅✅✅✅...GOOD THINGS TAKE TIME</div>
+          <div className="text-xs absolute top-0">THIS PAGE IS BEING BUILDING NOW 😊😊😊😊😊...GOOD THINGS TAKE TIME</div>
         <Navbar/>
         <Component {...pageProps} />
       </main>
