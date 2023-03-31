@@ -1,3 +1,4 @@
+import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
 import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
@@ -15,10 +16,15 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
-          <div className="text-xs absolute top-0">THIS PAGE IS BEING BUILDING NOW 🌚🌚🌚🌚...GOOD THINGS TAKE TIME</div>
-        <Navbar/>
+      <main
+        className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}
+      >
+        <div className="text-xs absolute top-0 bg-red-700 text-lime-100">
+          THIS PAGE IS BEING BUILDING NOW...GOOD THINGS TAKE TIME.....30% Built
+        </div>
+        <Navbar />
         <Component {...pageProps} />
+        <Footer/>
       </main>
     </>
   );
