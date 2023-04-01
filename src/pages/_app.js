@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="http://localhost:3000/LOGO-TOP.svg"  type="image/x-icon" />
+        <link rel="icon" href="http://localhost:3000/SSS-LOGO.png"  type="image/x-icon" />
       </Head>
       <main
         className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}
