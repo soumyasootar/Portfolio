@@ -55,7 +55,7 @@ const About = () => {
               <p className="font-medium">
                 Hey there! My name is Soumya Swaroop Sootar and I am a Full
                 Stack Web Developer with expertise in MERN Development. I
-                specialize in React, Express.js, Next.js, MongoDB, Chakra
+                specialize in React, Express.js, Next.js,NPM, MongoDB, Chakra
                 UI,Tailwind CSS, Node JS, HTML, CSS, and JavaScript. My strong
                 collaboration and problem-solving skills were developed through
                 team projects, and I am highly motivated to apply my technical
