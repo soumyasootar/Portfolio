@@ -6,12 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import zostelimg from "../../public/images/projects/ZOSTEL.png";
-import fabimg from "../../public/images/projects/Faballey.png"
-import shopimg from "../../public/images/projects/Shop.png"
+import fabimg from "../../public/images/projects/Faballey.png";
+import shopimg from "../../public/images/projects/Shop.png";
 
 const FeatureProject = ({ type, title, summary, img, github, link }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+    <article className="w-full flex relative items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+
       <Link
         href={link}
         target="_blank"
@@ -52,7 +54,9 @@ const FeatureProject = ({ type, title, summary, img, github, link }) => {
 const Project = ({ type, title, summary, img, github, link }) => {
   return (
     <>
-      <article className="w-full flex shadow-2xl items-center flex-col justify-center rounded-2xl border border-solid border-dark bg-light relative p-6 ">
+      <article className="w-full flex relative shadow-2xl items-center flex-col justify-center rounded-2xl border border-solid border-dark bg-light relative p-6 ">
+        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+
         <Link
           href={link}
           target="_blank"
@@ -128,7 +132,8 @@ const projects = () => {
                 summary="Authenticated login/signup, sort/filter, and voice search, built with HTML, JS, CSS, Email JS and Bootstrap."
               />
             </div>
-            <div className="col-span-6"><Project
+            <div className="col-span-6">
+              <Project
                 type={"PROJECT"}
                 title={"Shop.com"}
                 link="https://shopclone10.netlify.app/project.html"
@@ -136,7 +141,8 @@ const projects = () => {
                 img={shopimg}
                 summary="HTML, JS, and CSS used to create an e-commerce website with authentication, sorting, filtering, and voice search functionality."
                 // summary="Shop smarter and save big with SHOP.COM! Our e-commerce website offers thousands of products from different retailers, featuring authenticated login, sort and filter options, and even voice search.Tech Stacks used in this project are pure HTML, CSS and JS. Our team of five developers coded essential pages like cart, address, payment, and profile to ensure a seamless shopping experience. Enjoy a user-friendly and responsive platform that helps you find the best deals!"
-              /></div>
+              />
+            </div>
           </div>
         </Layout>
       </main>
