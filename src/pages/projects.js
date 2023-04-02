@@ -11,27 +11,39 @@ import shopimg from "../../public/images/projects/Shop.png";
 
 const FeatureProject = ({ type, title, summary, img, github, link }) => {
   return (
-    <article className="w-full flex relative items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+    <article className="dark:bg-dark dark:border-light w-full flex relative items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 rounded-br-2xl">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-primary" />
 
       <Link
         href={link}
         target="_blank"
         className=" w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
-          className="hover:underline underline-offset-2"
+          className="hover:underline underline-offset-2 dark:hover:un"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             {" "}
@@ -40,7 +52,7 @@ const FeatureProject = ({ type, title, summary, img, github, link }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+            className="ml-4 rounded-lg bg-dark dark:bg-light dark:text-dark text-light p-2 px-6 text-lg font-semibold"
           >
             {" "}
             Visit Project
@@ -54,8 +66,8 @@ const FeatureProject = ({ type, title, summary, img, github, link }) => {
 const Project = ({ type, title, summary, img, github, link }) => {
   return (
     <>
-      <article className="w-full flex relative shadow-2xl items-center flex-col justify-center rounded-2xl border border-solid border-dark bg-light relative p-6 ">
-        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+      <article className=" dark:bg-dark dark:border-light w-full flex relative shadow-2xl items-center flex-col justify-center rounded-2xl border border-solid border-dark bg-light relative p-6 ">
+        <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-primaryDark" />
 
         <Link
           href={link}
@@ -66,26 +78,30 @@ const Project = ({ type, title, summary, img, github, link }) => {
         </Link>
 
         <div className="w-full flex flex-col items-start justify-between mt-4">
-          <span className="text-primary font-medium text-xl">{type}</span>
+          <span className="text-primary dark:text-primaryDark font-medium text-xl">
+            {type}
+          </span>
           <Link
             href={link}
             target="_blank"
             className="hover:underline underline-offset-2"
           >
-            <h2 className="my-2 w-full text-left text-3xl font-bold">
+            <h2 className="my-2 w-full dark:text-light text-left text-3xl font-bold">
               {title}
             </h2>
           </Link>
-          <p className="my-2 font-medium text-dark">{summary}</p>
+          <p className="my-2 font-medium text-dark dark:text-light">
+            {summary}
+          </p>
           <div className="w-full justify-between mt-2 flex items-center">
             <Link href={github} target="_blank" className="w-10">
               {" "}
-              <GithubIcon />
+              <GithubIcon className={"dark:fill-light"} />
             </Link>
             <Link
               href={link}
               target="_blank"
-              className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+              className="ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 text-lg font-semibold"
             >
               {" "}
               Visit
@@ -104,7 +120,7 @@ const projects = () => {
         <title>Soumya | Project Page</title>
         <meta name="description" content="Generated by create next app" />
       </Head>
-      <main className="w-full mb-16 flex flex-col justify-center items-center">
+      <main className="w-full mb-16 flex flex-col justify-center items-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Imagination Trumps Knowledge!"

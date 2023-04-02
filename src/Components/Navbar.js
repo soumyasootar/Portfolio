@@ -22,7 +22,7 @@ const CustomLink = ({ href, title, className }) => {
 
       <span
         className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5
-      group-hover:w-full transition-[width] ease-in-out duration-300
+      group-hover:w-full transition-[width] ease-in-out duration-300 dark:bg-primary
       ${router.asPath === href ? "w-full" : "w-0"}
       `}
       >
@@ -35,7 +35,7 @@ const CustomLink = ({ href, title, className }) => {
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
   return (
-    <header className="w-full px-32 font-medium py-8 flex items-center justify-between">
+    <header className="w-full px-32 font-medium py-8 flex items-center justify-between dark:text-light">
       <nav>
         <CustomLink href="/" title={"Home"} className={"mr-4"}></CustomLink>
         <CustomLink
@@ -68,8 +68,12 @@ const Navbar = () => {
         >
           <LinkedInIcon />
         </motion.a>
-
-        <button className="ml-4 flex items-center justify-center rounded-full p-1" onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+        {/* darktheme button  */}
+        {/*mode === "light" ? "bg-light text-dark" : "bg-dark text-light"*/}
+        <button
+          className={`ml-4 flex items-center justify-center rounded-full p-1`}
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+        >
           {mode === "dark" ? (
             <SunIcon className={"fill-dark"} />
           ) : (

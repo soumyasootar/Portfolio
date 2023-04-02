@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Skill = ({ name, x, y ,link="#"}) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-2xl font-semibold bg-dark text-light px-5 py-2 shadow-dark cursor-pointer absolute"
+      className="flex items-center justify-center rounded-2xl font-semibold bg-dark dark:bg-light dark:text-dark text-light px-5 py-2 shadow-dark cursor-pointer absolute"
       whileHover={{ scale: 1.1 ,backgroundColor: [
             "#121212",
             "rgba(131,58,180,1)",
@@ -12,10 +12,11 @@ const Skill = ({ name, x, y ,link="#"}) => {
             "rgba(252,176,69,1)",
             "rgba(131,58,180,1)",
             "#121212",
-          ]}}
-      initial={{x:0,y:0}}
-      whileInView={{x:x,y:y}}
+          ],transition:{duration:2,repeat:Infinity}}}
+      initial={{x:0,y:0,backgroundColor:"grey",border:"2px solid gold"}}
+      whileInView={{x:x,y:y,transition:{duration:0.4}}}
       transition={{duration:1}}
+      // viewport={{once:"false"}}
     >
       <a href={link}>{name}</a>
     </motion.div>
@@ -26,7 +27,7 @@ const Skills = () => {
   return (
     <>
       <h2 className="font-bold text-8xl mt-64 mb-5 w-full text-center">Skills</h2>
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
 
       <motion.div
       className=" animate-spin-slow flex items-center justify-center rounded-full font-semibold bg-yellow-500 h-12 w-12 text-dark p-8 shadow-dark cursor-pointer absolute"

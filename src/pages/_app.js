@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="http://localhost:3000/SSS-LOGO.png"  type="image/x-icon" />
       </Head>
       <main
-        className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}
+        className={`${montserrat.variable} font-mont bg-light w-full dark:bg-dark min-h-screen`}
       >
         <div className="text-xs absolute top-0 bg-red-700 text-lime-100">
           THIS PAGE IS BEING BUILDING NOW...GOOD THINGS TAKE TIME.....80% Built⚠️
