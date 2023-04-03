@@ -4,17 +4,10 @@ import { motion } from "framer-motion";
 const Skill = ({ name, x, y ,link="#"}) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-2xl font-semibold bg-dark dark:bg-light dark:text-dark text-light px-5 py-2 shadow-dark cursor-pointer absolute"
-      whileHover={{ scale: 1.1 ,backgroundColor: [
-            "#121212",
-            "rgba(131,58,180,1)",
-            "rgba(253,29,29,1)",
-            "rgba(252,176,69,1)",
-            "rgba(131,58,180,1)",
-            "#121212",
-          ],transition:{duration:2,repeat:Infinity}}}
-      initial={{x:0,y:0,backgroundColor:"grey",border:"2px solid gold"}}
-      whileInView={{x:x,y:y,transition:{duration:0.4}}}
+      className="flex items-center justify-center rounded-2xl font-semibold bg-dark dark:bg-light dark:text-dark text-light px-5 py-2 shadow-dark cursor-pointer absolute lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent xs:dark:bg-transparent xs:text-dark xs:dark:text-light xs:font-bold"
+      whileHover={{ scale: 1.1}}
+      initial={{x:0,y:0}}
+      whileInView={{x:x,y:y,transition:1}}
       transition={{duration:1}}
       // viewport={{once:"false"}}
     >
@@ -26,13 +19,17 @@ const Skill = ({ name, x, y ,link="#"}) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-64 mb-5 w-full text-center">Skills</h2>
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
+      <h2 className="font-bold text-8xl mt-64 mb-5 w-full text-center md:text-6xl md:mt-32">Skills</h2>
+      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark
+      lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] 
+      lg:bg-circularLightLg lg:dark:bg-circularDarkLg
+      md:bg-circularLightMd md:dark:bg-circularDarkMd
+      sm:bg-circularLightSm sm:dark:bg-circularDarkLg
+      ">
 
       <motion.div
-      className=" animate-spin-slow flex items-center justify-center rounded-full font-semibold bg-yellow-500 h-12 w-12 text-dark p-8 shadow-dark cursor-pointer absolute"
+      className=" animate-spin-slow flex items-center justify-center rounded-full font-semibold bg-yellow-500 h-12 w-12 text-dark p-8 shadow-dark cursor-pointer absolute lg:p-4 md:p-4 xs:p-2 xs:text-xs"
       whileHover={{ scale: 1.1 }}
-      
       initial={{x:0,y:0}}
     >
       WEB
