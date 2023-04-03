@@ -73,12 +73,12 @@ const Navbar = () => {
     <header className="z-10 w-full px-32 lg:px-16 md:px-12 sm:px-6 font-medium py-8 flex items-center justify-between dark:text-light relative">
       {/* hamburger */}
       <button
-        className="flex-col justify-center items-center hidden lg:flex"
+        className="flex-col justify-center items-center hidden z-30 lg:flex"
         onClick={handlleClick}
       >
         <span
           className={`bg-dark transition-all duration-0.6 dark:bg-light block h-0.5 rounded-sm w-6 -translate-y-0.5  ${
-            isOpen ? `rotate-45 translate-y-1` : `-translate-y-0.5`
+            isOpen ? `rotate-45 translate-y-0.5` : `-translate-y-0.5`
           } `}
         ></span>
         <span
@@ -88,7 +88,7 @@ const Navbar = () => {
         ></span>
         <span
           className={`bg-dark transition-all duration-0.6 dark:bg-light block h-0.5 rounded-sm w-6 translate-y-0.5 ${
-            isOpen ? `-rotate-45 -translate-y-1` : `translate-y-0.5`
+            isOpen ? `-rotate-45 -translate-y-1.5` : `translate-y-0.5`
           }`}
         ></span>
       </button>
@@ -209,7 +209,7 @@ const Navbar = () => {
           </nav>
         </motion.div>
       ) : null}
-      <div className="absolute top-2 left-[50%] translate-x-[50%]">
+      <div className="absolute top-2 left-[50%] translate-x-[-50%]">
         <Logo />
       </div>
     </header>
