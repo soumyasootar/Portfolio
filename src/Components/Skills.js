@@ -34,25 +34,20 @@ const Skills = () => {
     >
       WEB
     </motion.div>
-        <Skill name="REACT" x="-13vw" y="0vw"/>
-        <Skill name="TAILWIND CSS" x="-5vw" y="18vw"/>
-        <Skill name="CHAKRA UI" x="24vw" y="-12vw"/>
-        <Skill name="DSA" x="13vw" y="-12vw"/>
-        <Skill name="REDUX" x="5vw" y="10vw"/>
-        <Skill name="NODE.JS" x="-5vw" y="-18vw"/>
-        <Skill name="JAVA" x="30vw" y="-6vw"/>
-        <Skill name="EXPRESS.JS" x="30vw" y="5vw"/>
-        <Skill name="MONGOOSE" x="17vw" y="-19vw"/>
-        <Skill name="NEXT.JS" x="-5vw" y="-10vw"/>
-        <Skill name="NETLIFY" x="-20vw" y="-19vw"/>
-        <Skill name="GITHUB" x="-32vw" y="0vw"/>
-        <Skill name="C++" x="29vw" y="14vw"/>
-        <Skill name="VERCEL" x="-26vw" y="-10vw"/>
-        <Skill name="MONGODB" x="-17vw" y="10vw"/>
-        <Skill name="JAVASCRIPT" x="8vw" y="-5vw"/>
-        <Skill name="HTML"x="19vw" y="0vw"/>
-        <Skill name="CSS" x="17vw" y="10vw"/>
-        <Skill name="NPM" x="-5vw" y="7vw"/>
+        <Skill name="REACT" x="30vw" y="0vw"/>
+        <Skill name="TAILWINDCSS" x="0vw" y="10vw"/>
+        <Skill name="CHAKRA UI" x="0vw" y="20vw"/>
+        <Skill name="REDUX" x="-30vw" y="0vw"/>
+        <Skill name="NODE.JS" x="0vw" y="-10vw"/>
+        <Skill name="JAVA" x="25vw" y="20vw"/>
+        <Skill name="DSA" x="-25vw" y="20vw"/>
+        <Skill name="EXPRESS.JS" x="0vw" y="-20vw"/>
+        <Skill name="MONGOOSE" x="25vw" y="-10vw"/>
+        <Skill name="NEXT.JS" x="-22vw" y="-10vw"/>
+        <Skill name="VERCEL" x="-25vw" y="10vw"/>
+        <Skill name="MONGODB" x="29vw" y="10vw"/>
+        <Skill name="NPM" x="-25vw" y="-20vw"/>
+        <Skill name="JS" x="25vw" y="-20vw"/>
       </div>
     </>
   );
