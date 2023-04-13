@@ -6,7 +6,6 @@ import {
   LinkedInIcon,
   MoonIcon,
   SunIcon,
-  TwitterIcon,
 } from "./Icons";
 import Logo from "./Logo";
 import { motion } from "framer-motion";
