@@ -13,7 +13,7 @@ const HireMe = () => {
           target="_blank"
           className="dark:bg-light dark:text-dark flex items-center pointer-events-auto justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border border-solid border-dark w-20 h-20 rounded-full font-semibold hover:bg-yellow-400 hover:dark:bg-yellow-400 hover:text-dark hover:border-none md:w-12 md:h-12 md:text-[10px]" 
         >
-          Contact Me
+          Contact
         </Link>
       </div>
     </div>
