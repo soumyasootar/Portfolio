@@ -9,7 +9,8 @@ import zostelimg from "../../public/images/projects/ZOSTEL.png";
 import fabimg from "../../public/images/projects/Faballey.png";
 import shopimg from "../../public/images/projects/Shop.png";
 import Transitions from "@/Components/Transitions";
-import Portfolioimg from "../../public/images/projects/Portfolio.png"
+import Portfolioimg from "../../public/images/projects/Portfolio.png";
+import Placeprepimg from "../../public/images/projects/Placeprep.com.png";
 
 const FeatureProject = ({ type, title, summary, img, github, link }) => {
   return (
@@ -132,6 +133,16 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 xl:gap-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-5 ">
             <div className="col-span-12">
               <FeatureProject
+                type={"FEATURE PROJECT (CLIENT WORK)"}
+                title={"PLACEPREP"}
+                link="https://place-prep-com-sigma.vercel.app/HomePage/index.html"
+                github={"https://github.com/soumyasootar/PlacePrep.com"}
+                img={Placeprepimg}
+                summary="Placeprep.com is a Educational website where anybody can learn about coding related topics and languages. Placeprep allows you to give MCQ test, apart from that it has two logins one for user login and another for admin with Email validation and Chatbot,Quiz,Proctoring,etc .This website was developed using HTML,SCSS,CSS,Javascript,Bootstrap & JSON Server."
+              />
+            </div>
+            <div className="col-span-12">
+              <FeatureProject
                 type={"FEATURE PROJECT"}
                 title={"ZOSTEL"}
                 link="https://zostel-ten.vercel.app/"
@@ -143,22 +154,22 @@ const projects = () => {
             <div className="col-span-12">
               <FeatureProject
                 type={"FEATURE PROJECT"}
-                title={"PORTFOLIO"}
-                link="https://soumyaswaroopsootar.vercel.app/"
-                github={"https://github.com/soumyasootar/Portfolio"}
-                img={Portfolioimg}
-                summary="A portfolio website using Nextjs and TailwindCSS is a great way to showcase skills. It has a clean design and easy navigation with separate pages for projects, skills, and about me. Projects have details on tools used, skills list expertise, and About Me page has bio, resume, and contact information. It offers a professional online presence for potential clients/employers to learn about skills and accomplishments."
+                title={"FABALLEY"}
+                link="https://fab-alley-clone-10.vercel.app/"
+                github={"https://github.com/soumyasootar/FabAlley"}
+                img={fabimg}
+                summary="FABALLEY is an Indian e-commerce website that offers a vast collection of trendy and affordable fashion styles. With authenticated login/signup, voice search, and sorting/filtering options, customers can enjoy a seamless shopping experience. The website features a well-designed landing page, login/signup with Email JS, cart, address, payment, and profile pages that are responsive across all devices. FABALLEY also provides multiple user login options, and its backend is built using Express and MongoDB Mongoose."
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type={"PROJECT"}
-                title={"FABALLEY"}
-                link="https://fab-alley-clone-10.vercel.app/"
-                github={"https://github.com/soumyasootar/FabAlley"}
-                img={fabimg}
-                // summary="FABALLEY - Fashion at your fingertips! Discover thousands of trendy and affordable styles on this Indian e-commerce website. Enjoy a seamless shopping experience with authenticated login/signup, voice search, sort and filter options. With a talented team, we've coded the landing page, login/signup with Email JS, cart, address, payment, and profile pages, ensuring responsiveness across all devices. Join the fashion revolution with FABALLEY!"
-                summary="Authenticated login/signup, sort/filter, and voice search, built with HTML, JS, CSS, Email JS and Bootstrap."
+                title={"PORTFOLIO"}
+                link="https://soumyaswaroopsootar.vercel.app/"
+                github={"https://github.com/soumyasootar/Portfolio"}
+                img={Portfolioimg}
+                summary="Portfolio using NextJS,Framer-Motion and TailwindCSS"
+                // summary="A portfolio website using Nextjs and TailwindCSS is a great way to showcase skills. It has a clean design and easy navigation with separate pages for projects, skills, and about me. Projects have details on tools used, skills list expertise, and About Me page has bio, resume, and contact information. It offers a professional online presence for potential clients/employers to learn about skills and accomplishments."
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
