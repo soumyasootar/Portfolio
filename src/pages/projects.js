@@ -180,7 +180,14 @@ const projects = () => {
                 github={"https://github.com/soumyasootar/www.shop.com"}
                 img={shopimg}
                 summary="HTML, JS, and CSS used to create an e-commerce website with authentication, sorting, filtering, and voice search functionality."
-                // summary="Shop smarter and save big with SHOP.COM! Our e-commerce website offers thousands of products from different retailers, featuring authenticated login, sort and filter options, and even voice search.Tech Stacks used in this project are pure HTML, CSS and JS. Our team of five developers coded essential pages like cart, address, payment, and profile to ensure a seamless shopping experience. Enjoy a user-friendly and responsive platform that helps you find the best deals!"
+              />
+              <Project
+                type={"PROJECT"}
+                title={"cocktail"}
+                link="https://cocktailcompass.vercel.app/"
+                github={"https://github.com/soumyasootar/CocktailCompass"}
+                img={shopimg}
+                summary="Find your Favourite Cocktails Here. Simple Cocktail Searching App made with React,Vite , Chakra UI , React-Redux."
               />
             </div>
           </div>
