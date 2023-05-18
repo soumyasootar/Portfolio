@@ -1,12 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import {
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  SunIcon,
-} from "./Icons";
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import Logo from "./Logo";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
@@ -109,7 +104,7 @@ const Navbar = () => {
           <CustomLink
             href="mailto:soumyaswaroopsootar@gmail.com"
             title={"Contact"}
-            className={"ml-4"}
+            className={"ml-6"}
           ></CustomLink>
         </nav>
         <nav className="flex item-center justify-center flex-wrap">
@@ -175,11 +170,11 @@ const Navbar = () => {
               className={""}
             ></CustomMobileLink>
             <CustomMobileLink
-            toggle={handlleClick}
-            href="mailto:soumyaswaroopsootar@gmail.com"
-            title={"Contact"}
-            className={""}
-          ></CustomMobileLink>
+              toggle={handlleClick}
+              href="mailto:soumyaswaroopsootar@gmail.com"
+              title={"Contact"}
+              className={""}
+            ></CustomMobileLink>
           </nav>
           <nav className="flex item-center justify-center flex-wrap mt-2">
             <motion.a
