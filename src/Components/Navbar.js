@@ -102,7 +102,7 @@ const Navbar = () => {
             className={"ml-4"}
           ></CustomLink>
           <CustomLink
-            href="mailto:soumyaswaroopsootar@gmail.com"
+            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=soumyawaroopsootar@gmail.com"
             title={"Contact"}
             className={"ml-6"}
           ></CustomLink>
@@ -171,7 +171,7 @@ const Navbar = () => {
             ></CustomMobileLink>
             <CustomMobileLink
               toggle={handlleClick}
-              href="mailto:soumyaswaroopsootar@gmail.com"
+              href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=soumyawaroopsootar@gmail.com"
               title={"Contact"}
               className={""}
             ></CustomMobileLink>
